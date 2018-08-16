@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Cousera Assignments</title>
+
+	<link rel="icon" href="shared/icons/cropped-fav-1-32x32.png" sizes="32x32">
+
+	<!-- Libraries css-->
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/html5-boilerplate/dist/css/main.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-ui-select/dist/select.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/select2/select2.css">
+
+	<!-- Source css-->
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<!-- <link rel="stylesheet" type="text/css" href="user-list/user-list.css"> -->
+	<link rel="stylesheet" type="text/css" href="users/users.css">
+	<link rel="stylesheet" type="text/css" href="dashboard/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="custom-directives/user.css">
+	<link rel="stylesheet" type="text/css" href="groups/group.css">
+	<link rel="stylesheet" type="text/css" href="map-users/map-users.css">
+<!--	
+<link rel="stylesheet" type="text/css" href="https://material.angularjs.org/latest/angular-material.min.css">
+	 <img src="bower_components/open-iconic/sprite/open-iconic.min.svg"> -->
+</head>
+
+
+<body>
+
+<mat-progress-spinner></mat-progress-spinner>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    	<div class="container">
+
+    	<div id="pop-area"></div>
+
+			<a class="navbar-brand" href="#">
+				<img src="shared/icons/cropped-fav-1-32x32.png"/> IndusInd CCS
+			</a>
+
+
+			<ul class="navbar-nav ml-auto ">
+
+	      		<li class="nav-item">
+		        	<a class="nav-link" ui-sref="login" ui-sref-active="active">Login</a>
+	      		</li>
+
+      			<li class="nav-item">
+		        	<a class="nav-link" ui-sref="dashboard" ui-sref-active="active">Dashboard</a>
+		      	</li>
+
+		      	<li class="nav-item">
+		        	<a class="nav-link" ui-sref="create-advisory" ui-sref-active="active">Advisory</a>
+		      	</li>
+
+		      	<li class="nav-item">
+		        	<a class="nav-link" ui-sref="users" ui-sref-active="active">User</a>
+	     		</li>
+
+	      		<li class="nav-item">
+		        	<a class="nav-link" ui-sref="groups" ui-sref-active="active">Group</a>
+		        </li>
+
+	      		<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Menu
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          	<a class="dropdown-item" ui-sref="logout">Sign out</a>
+			        </div>
+		      	</li>
+			</ul>
+	      </div>
+	    
+	</nav>
+
+
+	<div  class="container app-container">
+		<ui-view></ui-view>
+	</div>
+
+
+	<!-- Libraries-->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="bower_components/angular-ui-select/dist/select.min.js"></script>
+	<script src="components/version/version.js"></script>
+	<script src="components/version/version-directive.js"></script>
+	<script src="components/version/interpolate-filter.js"></script>
+	<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+	<!-- Source Scripts-->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="service-factory/auth.js"></script>
+	<script type="text/javascript" src="service-factory/appiyo-uri.js"></script>
+	<script type="text/javascript" src="service-factory/factory.js"></script>
+	<script type="text/javascript" src="login/login.js"></script>
+	<script type="text/javascript" src="groups/create-group.js"></script>
+	<script type="text/javascript" src="groups/edit-group.js"></script>
+	<script type="text/javascript" src="groups/groups.js"></script>
+	<script type="text/javascript" src="users/users.js"></script>
+	<script type="text/javascript" src="dashboard/dashboard.js"></script>
+	<script type="text/javascript" src="create-advisory/create-advisory.js"></script>
+	<!-- <script src="user-list/user-list.component.js"></script> -->
+	<script type="text/javascript" src="map-users/map-users.js"></script>
+	<script type="text/javascript" src="activity/activity.js"></script>
+	<script type="text/javascript" src="activity/mdialog.js"></script>
+	<script type="text/javascript" src="spinner/loader.js"></script>
+	<script type="text/javascript" src="custom-directives/user-directive.js"></script>
+
+</body>
+</html>
